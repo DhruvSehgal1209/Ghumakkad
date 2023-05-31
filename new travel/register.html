@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghumakkad | Login&Signup</title>
+    <link rel="stylesheet" href="/new travel/registers.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required id="email">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="password">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me <a href="#">Forget Password</a></label>
+                        
+                    </div>
+                    <div class="button">
+                    <!-- <button>Log In</button> -->
+                    <input type="submit" value="Login" class="submit-btn" onclick="auth()">
+                    </div>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function auth(){
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            if(email=="monika.sethi@chitkara.edu.in"||email=="admin123@gmail.com"||email=="dhruv278.be22@chitkara.edu.in"||email=="dhruv277.be22@chitkara.edu.in"||email=="dhruv275.be22@chitkara.edu.in"||email=="dhruv276.be22@chitkara.edu.in"||password=="123456789"){
+                window.location.assign("index.html");
+                alert("Login Succesful");
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>
